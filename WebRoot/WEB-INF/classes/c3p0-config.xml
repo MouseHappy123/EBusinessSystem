@@ -15,6 +15,8 @@
 			caching -->
 		<property name="maxStatements">0</property>
 		<property name="maxStatementsPerConnection">5</property> <!-- he's important, but there's only one of him -->
+		<property name="testConnectionOnCheckin" value="false"/>
+    	<property name="testConnectionOnCheckout" value="true"/>
 	</default-config>
 	
 	<named-config name="mysql">
@@ -30,5 +32,7 @@
 			caching -->
 		<property name="maxStatements">0</property>
 		<property name="maxStatementsPerConnection">5</property> <!-- he's important, but there's only one of him -->
+		<property name="testConnectionOnCheckin" value="false"/>
+    	<property name="testConnectionOnCheckout" value="true"/>
 	</named-config>
 </c3p0-config>
